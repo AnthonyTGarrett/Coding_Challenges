@@ -4,3 +4,10 @@
 
 # If input data is invalid you should return 0 (as in no breaks are needed if we do not have any chocolate to split). Input will always be a non-negative integer.
 
+def break_chocolate(n, m):
+    if n == 0 and m == 0:
+        return 0
+    if n ==1 and m ==1:
+        return 0
+    
+    return n*m -1
