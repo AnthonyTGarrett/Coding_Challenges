@@ -8,3 +8,19 @@
 # 60 <= score < 70	'D'
 # 0 <= score < 60	'F'
 # Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
+def get_grade(s1, s2, s3):
+    grade = ''
+    average = (s1 + s2 + s3) / 3
+    
+    if 90 <= average <= 100:
+        grade = 'A'
+    elif 80 <= average < 90:
+        grade = 'B'
+    elif 70 <= average < 80:
+        grade = 'C'
+    elif 60 <= average < 70:
+        grade = 'D'
+    else:
+        grade = 'F'
+    
+    return grade
